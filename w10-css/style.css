@@ -1,0 +1,36 @@
+body {
+    background: greenyellow;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+p {
+    background: lightpink;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a {
+    font-size: 30px;
+}
+
+a:hover {
+    font-size: 32px;
+    color: white
+}
+
+/* hover makes the text move and change color when you move the mouse on the text */
+
+.deco1 {
+    color: gold
+}
+
+.deco2 {
+    color: rgb(232, 3, 167)
+}
+
+/* you can add 0.3 after the rgb = 30% = alpha = opacity */
+/* background/color/font are "property" */

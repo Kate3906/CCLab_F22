@@ -1,0 +1,53 @@
+body {
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body,
+h3,
+p {
+    margin: 0
+}
+
+/* if you only have h3 and p, then only the margin of these two will be 0 */
+/* when you add body,then all texts inside the body will have margin of 0 */
+
+/* this will make the space between text in the div class smaller and margin too */
+
+#special-box {
+    background-color: tomato;
+    display: none;
+    /* visibility: ; */
+    /* /*position: absolute; */
+    left: 100px;
+    top: 300px;
+}
+
+/* display none means the special box will not be shown */
+
+.text-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* with margin-bottom of 10, the space below h will increase by 10, thus it would also affect the p by moving it down from its original position */
+/* thus if there is no p under h, you would not see the change */
+
+.text-dsc {
+    font-size: 15px;
+
+}
+
+.box {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: blueviolet;
+}
+
+/* margin of 20 means the space around the box is 20 away from the box */
+/* padding of 10 means the space around the text in the box increases by 10px, instead of being stick to the side of the box */
