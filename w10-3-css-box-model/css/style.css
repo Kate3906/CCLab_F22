@@ -18,9 +18,9 @@ p {
     background-color: tomato;
     display: none;
     /* visibility: ; */
-    /* /*position: absolute; */
+    position: fixed;
     left: 100px;
-    top: 300px;
+    top: 500px;
 }
 
 /* display none means the special box will not be shown */

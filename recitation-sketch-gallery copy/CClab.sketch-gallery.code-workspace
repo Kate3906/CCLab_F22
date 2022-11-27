@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../CClab"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CCLab_F22"
+	}
+}

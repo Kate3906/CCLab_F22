@@ -1,8 +1,59 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  /* background-color: black; */
+  background-image: url("star-night-view.jpeg");
+  color: white;
+}
+
+#canvasContainer {
+  position: absolute;
+  left: 7%;
+  top: 18%;
 }
 
 canvas {
   display: block;
 }
+
+img {
+  width: 53%;
+  height: 93%;
+  position: absolute;
+  left: 2%;
+  top: 9%;
+}
+
+.abstract {
+  margin-right: 5%;
+  margin-left: 58%;
+  position: absolute;
+  right: 5%;
+  top: 430px;
+}
+
+.title {
+  border-top: 5px double;
+  position: absolute;
+  right: 10%;
+  top: 290px;
+}
+
+.button {
+  position: absolute;
+  right: 10%;
+  top: 580px;
+}
+
+/* .reflection { 
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  right: 10%;
+  top: 290px;
+  /* margin: 20px; */
+/* border-width: 5px; */
+/* border-style: dotted; */
+/* border-color: beige; */
+/* font-family: 'Times New Roman', Times, serif */

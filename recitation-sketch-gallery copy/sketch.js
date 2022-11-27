@@ -7,10 +7,10 @@ let colors = ["Lavender", "Lightblue", "Lemonchiffon", "Lightpink", "Lightseagre
 
 let g;
 function setup() {
-  //clear();
   let canvas = createCanvas(620, 620);
   canvas.parent("canvasContainer");
-  background(0, 10);
+  background(245, 216, 229);
+  //background(221, 238, 238);
   g = createGraphics(width, height);
 
   angleMode(DEGREES);
@@ -25,24 +25,24 @@ function setup() {
   //50=numbers of circles in each ring
   //8=size of the circles
   pollens[1] = new Pollen(x, y, 120, 220, 10, 8, colorName);
-  pollens[2] = new Pollen(x, y, 40, 150, 1000, 90, "white");
+  pollens[2] = new Pollen(x, y, 40, 110, 1000, 40, "white");
   pollens[3] = new Pollen(x, y, 170, 280, 50, 5, "firebrick");
 }
 
 function draw() {
-  background(0);
+  background(245, 216, 229);
+  //background(221, 238, 238);
 
   translate(width / 2, height / 2);
   rotate(frameCount * -0.1);
 
   translate(-width / 2, -height / 2); // tip!
   push();
-  g.background(0, 3.5);
+  g.background(245, 216, 229, 3.5);
   image(g, 0, 0);
   for (let j = 0; j < pollens.length; j++) {
     pollens[j].present();
   }
-
   pop();
 
   if (seq == 0) {
@@ -72,9 +72,8 @@ function draw() {
     drawEnding();
   }
 
-  text("Sequence: " + seq, 10, 20);
-  text("Click to move to next phase.", 10, 50);
 }
+
 
 function proceedSequence() {
   seq++;
@@ -84,7 +83,7 @@ function proceedSequence() {
 }
 
 function drawIntro() {
-  background(0);
+  background(221, 238, 238);
 }
 
 function drawflower1() {
@@ -99,7 +98,7 @@ function drawflower1() {
   rotate(frameCount * 0.5);
   for (let i = 1; i < 50; i++) {
     noFill();
-    stroke(255);
+    stroke(0);
     arc(0, 0, 10, 10, -360, angle);
     rotate(30);
     arc(0, 0, 30, 30, -360, angle);
@@ -130,7 +129,7 @@ function drawflower2() {
   rotate(frameCount * 0.5);
   for (let i = 1; i < 30; i++) {
     noFill();
-    stroke(255);
+    stroke(0);
     arc(0, 0, 30, 10, -360, angle);
     rotate(45);
     arc(0, 0, 30, 30, -360, angle);
@@ -152,9 +151,6 @@ function drawflower3() {
   scale(1.5);
   rotate(frameCount * 0.5);
   noFill();
-  //stroke(100);
-  //strokeWeight(5);
-  //circle(0, 0, 50);
   for (let radDist = 10; radDist <= 55; radDist += 3) {
     for (let deg = 0; deg < 360; deg += 30) {
       let radialDistance = radDist;
@@ -163,7 +159,7 @@ function drawflower3() {
       let dia = map(radDist, 30, 120, 2, 30);
 
       noStroke();
-      fill(255);
+      fill(0);
       circle(x, y, dia);
       endShape();
     }
@@ -178,7 +174,7 @@ function drawflower3() {
   for (let i = 0; i < 30; i++) {
     rotate(12);
     noFill();
-    stroke(255);
+    stroke(0);
     strokeWeight(1);
     circle(15, 15, 10);
     endShape();
@@ -192,7 +188,7 @@ function drawflower4() {
   rotate(frameCount * 0.5);
   noFill();
   strokeWeight(10);
-  stroke(255);
+  stroke(0);
   circle(0, 0, 50);
   for (let i = 0; i < 8; i++) {
     let freq = frameCount * 2;
@@ -200,7 +196,7 @@ function drawflower4() {
     let dia = map(sinVal, -1, 1, 50, 100);
     noFill();
     strokeWeight(3);
-    stroke(255);
+    stroke(0);
     rotate(45);
     circle(40, 20, dia);
     endShape();
@@ -217,7 +213,7 @@ function drawflower4() {
       let x = cos(deg) * radDist;
       let y = sin(deg) * radDist;
       noStroke();
-      fill(250);
+      fill(10);
       circle(x, y, 5);
       endShape();
     }
@@ -226,7 +222,6 @@ function drawflower4() {
 }
 function drawflower5() {
   transition += 0.5;
-  //transition = constrain(transition, 100, 200);
   let freq = frameCount * 1.5;
   let sinVal = sin(freq);
   let dia = map(sinVal, -1, 1, -10, 130);
@@ -240,7 +235,7 @@ function drawflower5() {
     rotate(22);
     noFill();
     //stroke(10, 100, 150, 30);
-    stroke(255);
+    stroke(0);
     ellipse(0, 0, dia, dia1);
     endShape();
   }
@@ -254,14 +249,13 @@ function drawflower5() {
     rotate(42);
     noFill();
     //stroke(10, 180, 70);
-    stroke(255);
+    stroke(0);
     rect(45, 45, 10, 10);
     endShape();
   }
   pop();
 }
 function drawEnding() {
-  // background(100);
   fill(255);
   ellipse(width / 2, height / 2, 100, 100);
 }
@@ -347,6 +341,7 @@ class Pollen {
     g.pop();
   }
 }
+
 
 function buttonClicked() {
   console.log("Button Clicked!");
