@@ -7,6 +7,7 @@ body {
   /* background-color: white; */
   /* background-color: white; */
 
+
 }
 
 #canvasContainer {
@@ -70,4 +71,12 @@ img.hand2 {
   right: 9%;
   top: 20%;
   width: 20%;
+}
+
+img.heart {
+  /* position: absolute;
+  left: 10%;
+  top: 15%; */
+  background-image: url(heart.gif);
+
 }
