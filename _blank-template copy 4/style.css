@@ -1,0 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(245, 216, 229);
+}
+
+#canvasContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+canvas {
+  display: block;
+}
