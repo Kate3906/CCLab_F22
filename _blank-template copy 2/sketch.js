@@ -3,9 +3,9 @@ let loves = ["Keep trying.", "Love does not happen so easily.", "It's better to 
 let students = ["Do your best with what you have.", "Hard work does not guarantee success, but not doing anything guarantees failure.", "You are doing better than you think.", "It’s never too late to do anything.", "Why not try a different path?", "Don’t use your past experiences to predict your future.", "Life is a roller coaster.", "Think carefully before you make a decision.", "Grab every opportunity.", "Don’t wait for opportunity. Create it.", "Keep trying.", "You get what you give.", "Don’t give up.", "Obstacles are unavoidable.", "Your perception isn’t based on reality. Your reality is based on your perception.", "Yes!", "Why not?", "It’s okay to fail sometimes.", "Don’t worry, everything will alright.", "Good results are not guaranteed."]
 let Answer;
 function setup() {
-  let canvas = createCanvas(650, 400);
+  let canvas = createCanvas(600, 280);
   canvas.parent("canvasContainer");
-  background(255);
+  background(246, 230, 230);
 
   randomIndex = floor(random(loves.length));
   Answer = loves[randomIndex];
