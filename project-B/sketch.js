@@ -7,11 +7,11 @@ function setup() {
   canvas.parent("canvasContainer");
   background(246, 230, 230);
 
-  randomIndex = floor(random(loves.length));
-  Answer = loves[randomIndex];
+  // randomIndex = floor(random(loves.length));
+  // AnswerL = loves[randomIndex];
 
   randomIndex2 = floor(random(study.length));
-  Answer = study[randomIndex2];
+  AnswerS = study[randomIndex2];
 }
 
 function draw() {
@@ -20,7 +20,7 @@ function draw() {
   textSize(40);
   textFont("'Sail',cursive");
   fill(0);
-  text(Answer, 40, 0, 500, 300);
+  text(AnswerS, 40, 0, 500, 300);
   pop();
   //text(randomIndex,20,40);
 }
