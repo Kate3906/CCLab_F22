@@ -2,11 +2,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(246, 230, 230);
+  /* background-color: rgb(246, 230, 230); */
   /* background-color: hsl(0, 75%, 89%); */
-  /* background-color: rgb(249, 245, 239); */
+  background-color: rgb(251, 236, 214);
   /* background-color: white; */
-  /* background-color: white; */
+
 
 
 }
@@ -39,8 +39,11 @@ h1 {
 
 h2 {
   position: absolute;
-  left: 43%;
+  left: 38%;
   top: 30%;
+  font-family: 'Indie Flower', cursive;
+
+  font-size: 200%;
 }
 
 /* img.frame {
@@ -76,9 +79,60 @@ img.hand2 {
 }
 
 img.heart {
-  /* position: absolute;
-  left: 10%;
-  top: 15%; */
+  position: absolute;
+  left: 16%;
+  top: 17%;
   background-image: url(heart.gif);
+
+}
+
+img.book {
+  position: absolute;
+  left: 40%;
+  top: 54.5%;
+  /* background-image: url(book.gif); */
+  width: 6%;
+}
+
+button.lovebutton {
+  background-color: pink;
+  border-radius: 40px;
+  border-width: thick;
+  border-color: hsl(0, 1%, 32%);
+  transition: 0.3s;
+  position: absolute;
+  left: 46%;
+  top: 43%;
+  width: 10%;
+  height: 10%;
+  font-size: 240%;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+button.lovebutton:hover {
+  background-color: rgb(246, 124, 165);
+
+}
+
+button.studybutton {
+  background-color: rgb(204, 229, 251);
+  border-radius: 40px;
+  border-width: thick;
+  border-color: hsl(0, 1%, 32%);
+  border transition: 0.3s;
+  position: absolute;
+  left: 46%;
+  top: 55%;
+  width: 10%;
+  height: 10%;
+  font-size: 240%;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Patrick Hand', cursive;
+}
+
+button.studybutton:hover {
+  background-color: rgb(141, 196, 244);
 
 }
