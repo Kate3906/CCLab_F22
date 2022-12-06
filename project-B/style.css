@@ -15,6 +15,7 @@ body {
   position: absolute;
   left: 30%;
   top: 33%;
+  z-index: -1;
 }
 
 canvas {
