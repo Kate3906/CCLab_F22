@@ -24,7 +24,7 @@ function draw() {
   if (category == "love") {
     background(247, 221, 221);
   } else {
-    background(247, 221, 0); // change
+    background(214, 231, 247); // change
   }
 
   push();
@@ -37,7 +37,14 @@ function draw() {
   //text(randomIndex,20,40);
 }
 
-/*function buttonClicked() {
+function buttonClicked() {
   console.log("Button Clicked!");
-  background(random(255));
-}*/
+  if (category == "love") {
+    let randomIndex = floor(random(loves.length));
+    answer = loves[randomIndex];
+  } else {
+    let randomIndex = floor(random(study.length));
+    answer = study[randomIndex];
+  }
+
+}
