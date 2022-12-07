@@ -75,7 +75,7 @@ button.homebutton:hover {
     background-color: rgb(242, 208, 108);
 }
 
-button.startbutton {
+button#startbutton {
     background-color: rgb(178, 213, 192);
     border-width: thick;
     border-radius: 40px;
@@ -90,6 +90,6 @@ button.startbutton {
     font-family: 'Patrick Hand', cursive;
 }
 
-button.startbutton:hover {
+button#startbutton:hover {
     background-color: rgb(117, 199, 127);
 }

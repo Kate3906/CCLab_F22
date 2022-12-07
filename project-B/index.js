@@ -1,4 +1,4 @@
-const btn = document.getElementsByClassName('startbutton');
+const btn = document.getElementById('startbutton');
 
 btn.addEventListener('click', function handleClick() {
     const initialText = 'Start!';
