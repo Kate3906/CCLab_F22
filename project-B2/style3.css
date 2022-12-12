@@ -1,0 +1,94 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 221, 221);
+}
+
+#canvasContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+canvas {
+    display: block;
+}
+
+img.frame8 {
+
+    position: absolute;
+    left: 1.5%;
+    top: 1%;
+    width: 95%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Henny Penny', cursive;
+    font-size: 390%;
+    position: absolute;
+    left: 36%;
+    top: 10%;
+}
+
+h2 {
+    position: absolute;
+    left: 31%;
+    top: 30%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 130%;
+}
+
+img.hand {
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    width: 20%;
+}
+
+img.hand2 {
+    position: absolute;
+    right: 9%;
+    top: 20%;
+    width: 20%;
+}
+
+button.homebutton {
+    background-color: rgb(251, 236, 214);
+    border-width: thick;
+    border-radius: 40px;
+    border-color: hsl(0, 1%, 32%);
+    transition: 0.3s;
+    position: absolute;
+    right: 35%;
+    top: 75%;
+    width: 8%;
+    height: 9%;
+    font-size: 240%;
+    font-family: 'Patrick Hand', cursive;
+}
+
+button.homebutton:hover {
+    background-color: rgb(242, 208, 108);
+}
+
+button#startbutton {
+    background-color: rgb(178, 213, 192);
+    border-width: thick;
+    border-radius: 40px;
+    border-color: hsl(0, 1%, 32%);
+    transition: 0.3s;
+    position: absolute;
+    left: 35%;
+    top: 75%;
+    width: 8%;
+    height: 9%;
+    font-size: 240%;
+    font-family: 'Patrick Hand', cursive;
+}
+
+button#startbutton:hover {
+    background-color: rgb(117, 199, 127);
+}
